@@ -1,0 +1,34 @@
+.form {
+    margin-top: 20%;
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: space-between; 
+    padding: 3%; 
+}
+
+.form-input {
+    height: $xl-size;
+    width: 45%;
+    border: 0;
+    border-bottom: 1px solid $blue;
+    background: none;
+    border-radius: 0;
+    color: $off-white;
+    font-size: $m-size;
+    &:hover {
+        background-color: lighten($dak-green, 2);
+    }
+
+}
+
+.form-button {
+    font-size: $m-size;
+    border: none;
+    background-color: $green;
+    border-bottom: 0.2rem solid darken($green, 10);
+    margin-top: 10px;
+    color: $off-white;
+    height: $xl-size;
+    width: 100%; 
+}
+

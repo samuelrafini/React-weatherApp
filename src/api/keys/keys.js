@@ -1,0 +1,3 @@
+
+export const openWeathermapAPI_KEY = '744113a768ea2cf75f54a4ffbe673b84'
+export const unsplashAPI_KEY = '12ea255311a07a21aae4ece78443ce0c1541754d33f0c597e67996cb42eda0ec'

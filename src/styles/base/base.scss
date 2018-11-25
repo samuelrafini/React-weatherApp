@@ -1,0 +1,27 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    background: $off-white;
+    background: linear-gradient(to right, $green 0%, $off-white 100%);
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+*::placeholder {
+    /* modern browser */
+    color: $blue;
+}
