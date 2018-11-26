@@ -1,15 +1,19 @@
 {
   "name": "weather-app",
   "version": "1.0.0",
+  "hompage": "http://samuelrafini.github.io/React-weatherApp",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
     "prebuild": "webpack --mode production --config config/webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress",
-    "build": "node server"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d build",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "dependencies": {
     "express": "^4.16.4",
+    "gh-pages-webpack-plugin": "^1.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.1.1",
