@@ -13,17 +13,13 @@ module.exports = env => {
   return merge([
       {
         entry: ['@babel/polyfill', APP_DIR], 
-        output: {
-          path: path.resolve(__dirname, "/dist"),
-          filename: "bundle.js"
-        },
         module: {
           rules: [
             {
               test: /\.js$/,
               exclude: /node_modules/,
               use: {
-                loader: 'babel-loader'
+                loader: 'babel-loader',
               }
             },
             {
